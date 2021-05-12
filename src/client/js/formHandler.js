@@ -13,4 +13,10 @@ function handleSubmit(event) {
     })
 }
 
+function onBlur() {
+    // A place holder for the onblur event.
+    console.log("::: onBlur handled :::");
+}
+
 export { handleSubmit };
+export { onBlur };

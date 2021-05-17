@@ -9,14 +9,10 @@ function handleSubmit(event) {
     fetch('http://localhost:8081/test')
     .then(res => res.json())
     .then(function(res) {
+        console.log(res);
         document.getElementById('results').innerHTML = res.message
     })
 }
 
-function onBlur() {
-    // A place holder for the onblur event.
-    console.log("::: onBlur handled :::");
-}
-
 export { handleSubmit };
-export { onBlur };
+
